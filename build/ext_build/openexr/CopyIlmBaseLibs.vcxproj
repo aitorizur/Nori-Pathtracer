@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{57B7D838-53B1-3579-9457-C779C4714C49}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>CopyIlmBaseLibs</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\zlib;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Iex;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Imath;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\IlmThread;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Half;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\zlib;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Iex;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Imath;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\IlmThread;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Half;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\zlib;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Iex;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Imath;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\IlmThread;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Half;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\zlib;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Iex;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Imath;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\IlmThread;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Half;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\CMakeFiles\0b138dbaf9d6202fce559b37e8675cec\CopyIlmBaseLibs.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/IlmBase/Half/ E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/OpenEXR/IlmImf/
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/IlmBase/IlmThread/ E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/OpenEXR/IlmImf/
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/IlmBase/Iex/ E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/OpenEXR/IlmImf/
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/IlmBase/Imath/ E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/OpenEXR/IlmImf/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\CMakeFiles\CopyIlmBaseLibs</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/IlmBase/Half/ E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/OpenEXR/IlmImf/
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/IlmBase/IlmThread/ E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/OpenEXR/IlmImf/
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/IlmBase/Iex/ E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/OpenEXR/IlmImf/
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/IlmBase/Imath/ E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/OpenEXR/IlmImf/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\CMakeFiles\CopyIlmBaseLibs</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/IlmBase/Half/ E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/OpenEXR/IlmImf/
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/IlmBase/IlmThread/ E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/OpenEXR/IlmImf/
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/IlmBase/Iex/ E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/OpenEXR/IlmImf/
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/IlmBase/Imath/ E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/OpenEXR/IlmImf/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\CMakeFiles\CopyIlmBaseLibs</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/IlmBase/Half/ E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/OpenEXR/IlmImf/
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/IlmBase/IlmThread/ E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/OpenEXR/IlmImf/
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/IlmBase/Iex/ E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/OpenEXR/IlmImf/
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/IlmBase/Imath/ E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/OpenEXR/IlmImf/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\CMakeFiles\CopyIlmBaseLibs</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/nori-master/ext/openexr/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/nori-master -BE:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build --check-stamp-file E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/nori-master/ext/openexr/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/nori-master -BE:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build --check-stamp-file E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/nori-master/ext/openexr/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/nori-master -BE:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build --check-stamp-file E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/nori-master/ext/openexr/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/nori-master -BE:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build --check-stamp-file E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/ext_build/openexr/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\CMakeFiles\CopyIlmBaseLibs">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ZERO_CHECK.vcxproj">
+      <Project>{5B3F274A-DB5D-34A1-A90D-88ACA740E2A0}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\Half\Half.vcxproj">
+      <Project>{37927AED-B892-3F03-B678-7B11D7DF9E59}</Project>
+      <Name>Half</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\Iex\Iex.vcxproj">
+      <Project>{84BE3570-6D6C-3FCA-9BAC-B0A3CFF43A83}</Project>
+      <Name>Iex</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\IlmThread\IlmThread.vcxproj">
+      <Project>{2A68FE46-0022-36E0-A904-800075EAA828}</Project>
+      <Name>IlmThread</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\Imath\Imath.vcxproj">
+      <Project>{6738C057-81B4-3C8E-80B8-1ADDCAD0BEEF}</Project>
+      <Name>Imath</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

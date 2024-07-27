@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.23/Modules/CPack.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/CPackComponent.cmake
+C:/Program Files/CMake/share/cmake-3.23/Templates/CPackConfig.cmake.in
+E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/nori-master/ext/openexr/IlmBase/CMakeLists.txt

@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0D5AC624-EABB-3362-B64C-9AC6348C1B64}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>nori</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">nori.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">nori</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">nori.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">nori</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">nori.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">nori</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">nori.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">nori</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tinyformat;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\eigen;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Imath;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Iex;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Half;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\OpenEXR\IlmImf;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\OpenEXR\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tbb\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pcg32;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pugixml\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\hypothesis;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glfw\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glew\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glad\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\filesystem;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tinyformat;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\eigen;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Imath;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Iex;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Half;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\OpenEXR\IlmImf;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\OpenEXR\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tbb\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pcg32;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pugixml\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\hypothesis;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glfw\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glew\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glad\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\filesystem;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <IncludePaths>E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tinyformat;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\eigen;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Imath;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Iex;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Half;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\OpenEXR\IlmImf;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\OpenEXR\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tbb\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pcg32;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pugixml\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\hypothesis;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glfw\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glew\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glad\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\filesystem;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\example;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tinyformat;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\eigen;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Imath;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Iex;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Half;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\OpenEXR\IlmImf;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\OpenEXR\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tbb\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pcg32;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pugixml\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\hypothesis;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glfw\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glew\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glad\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\filesystem;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ext_build\tbb\Debug\tbb_static.lib;ext_build\Debug\pugixml.lib;ext_build\openexr\OpenEXR\IlmImf\Debug\IlmImf.lib;ext_build\nanogui\Debug\nanogui.lib;opengl32.lib;ext_build\zlib\Debug\zlibstatic.lib;ext_build\openexr\IlmBase\Half\Debug\Half.lib;ext_build\openexr\IlmBase\Imath\Debug\Imath.lib;ext_build\openexr\IlmBase\IlmThread\Debug\IlmThread.lib;ext_build\openexr\IlmBase\Iex\Debug\Iex.lib;ext_build\zlib\Debug\zlibstatic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/Debug/nori.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/Debug/nori.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tinyformat;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\eigen;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Imath;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Iex;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Half;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\OpenEXR\IlmImf;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\OpenEXR\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tbb\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pcg32;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pugixml\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\hypothesis;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glfw\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glew\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glad\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\filesystem;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tinyformat;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\eigen;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Imath;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Iex;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Half;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\OpenEXR\IlmImf;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\OpenEXR\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tbb\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pcg32;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pugixml\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\hypothesis;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glfw\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glew\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glad\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\filesystem;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <IncludePaths>E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tinyformat;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\eigen;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Imath;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Iex;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Half;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\OpenEXR\IlmImf;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\OpenEXR\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tbb\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pcg32;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pugixml\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\hypothesis;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glfw\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glew\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glad\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\filesystem;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\example;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tinyformat;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\eigen;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Imath;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Iex;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Half;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\OpenEXR\IlmImf;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\OpenEXR\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tbb\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pcg32;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pugixml\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\hypothesis;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glfw\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glew\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glad\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\filesystem;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ext_build\tbb\Release\tbb_static.lib;ext_build\Release\pugixml.lib;ext_build\openexr\OpenEXR\IlmImf\Release\IlmImf.lib;ext_build\nanogui\Release\nanogui.lib;opengl32.lib;ext_build\zlib\Release\zlibstatic.lib;ext_build\openexr\IlmBase\Half\Release\Half.lib;ext_build\openexr\IlmBase\Imath\Release\Imath.lib;ext_build\openexr\IlmBase\IlmThread\Release\IlmThread.lib;ext_build\openexr\IlmBase\Iex\Release\Iex.lib;ext_build\zlib\Release\zlibstatic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/Release/nori.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/Release/nori.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tinyformat;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\eigen;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Imath;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Iex;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Half;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\OpenEXR\IlmImf;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\OpenEXR\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tbb\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pcg32;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pugixml\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\hypothesis;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glfw\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glew\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glad\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\filesystem;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tinyformat;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\eigen;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Imath;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Iex;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Half;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\OpenEXR\IlmImf;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\OpenEXR\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tbb\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pcg32;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pugixml\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\hypothesis;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glfw\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glew\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glad\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\filesystem;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <IncludePaths>E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tinyformat;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\eigen;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Imath;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Iex;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Half;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\OpenEXR\IlmImf;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\OpenEXR\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tbb\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pcg32;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pugixml\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\hypothesis;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glfw\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glew\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glad\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\filesystem;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\example;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tinyformat;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\eigen;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Imath;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Iex;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Half;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\OpenEXR\IlmImf;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\OpenEXR\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tbb\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pcg32;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pugixml\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\hypothesis;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glfw\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glew\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glad\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\filesystem;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ext_build\tbb\MinSizeRel\tbb_static.lib;ext_build\MinSizeRel\pugixml.lib;ext_build\openexr\OpenEXR\IlmImf\MinSizeRel\IlmImf.lib;ext_build\nanogui\MinSizeRel\nanogui.lib;opengl32.lib;ext_build\zlib\MinSizeRel\zlibstatic.lib;ext_build\openexr\IlmBase\Half\MinSizeRel\Half.lib;ext_build\openexr\IlmBase\Imath\MinSizeRel\Imath.lib;ext_build\openexr\IlmBase\IlmThread\MinSizeRel\IlmThread.lib;ext_build\openexr\IlmBase\Iex\MinSizeRel\Iex.lib;ext_build\zlib\MinSizeRel\zlibstatic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/MinSizeRel/nori.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/MinSizeRel/nori.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tinyformat;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\eigen;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Imath;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Iex;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Half;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\OpenEXR\IlmImf;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\OpenEXR\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tbb\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pcg32;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pugixml\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\hypothesis;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glfw\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glew\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glad\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\filesystem;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tinyformat;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\eigen;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Imath;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Iex;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Half;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\OpenEXR\IlmImf;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\OpenEXR\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tbb\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pcg32;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pugixml\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\hypothesis;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glfw\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glew\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glad\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\filesystem;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <IncludePaths>E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tinyformat;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\eigen;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Imath;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Iex;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Half;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\OpenEXR\IlmImf;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\OpenEXR\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tbb\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pcg32;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pugixml\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\hypothesis;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glfw\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glew\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glad\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\filesystem;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\example;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tinyformat;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\eigen;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Imath;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Iex;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\IlmBase\Half;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\OpenEXR\IlmImf;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\OpenEXR\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\config;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tbb\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pcg32;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\pugixml\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\hypothesis;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glfw\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glew\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\src;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\glad\include;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\filesystem;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ext_build\tbb\RelWithDebInfo\tbb_static.lib;ext_build\RelWithDebInfo\pugixml.lib;ext_build\openexr\OpenEXR\IlmImf\RelWithDebInfo\IlmImf.lib;ext_build\nanogui\RelWithDebInfo\nanogui.lib;opengl32.lib;ext_build\zlib\RelWithDebInfo\zlibstatic.lib;ext_build\openexr\IlmBase\Half\RelWithDebInfo\Half.lib;ext_build\openexr\IlmBase\Imath\RelWithDebInfo\Imath.lib;ext_build\openexr\IlmBase\IlmThread\RelWithDebInfo\IlmThread.lib;ext_build\openexr\IlmBase\Iex\RelWithDebInfo\Iex.lib;ext_build\zlib\RelWithDebInfo\zlibstatic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/RelWithDebInfo/nori.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/RelWithDebInfo/nori.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/nori-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/nori-master -BE:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build --check-stamp-file E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\CMakeFiles\3.23.2\CMakeCCompiler.cmake;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\CMakeFiles\3.23.2\CMakeCXXCompiler.cmake;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\CMakeFiles\3.23.2\CMakeRCCompiler.cmake;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\CMakeFiles\3.23.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/nori-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/nori-master -BE:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build --check-stamp-file E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\CMakeFiles\3.23.2\CMakeCCompiler.cmake;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\CMakeFiles\3.23.2\CMakeCXXCompiler.cmake;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\CMakeFiles\3.23.2\CMakeRCCompiler.cmake;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\CMakeFiles\3.23.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/nori-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/nori-master -BE:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build --check-stamp-file E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\CMakeFiles\3.23.2\CMakeCCompiler.cmake;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\CMakeFiles\3.23.2\CMakeCXXCompiler.cmake;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\CMakeFiles\3.23.2\CMakeRCCompiler.cmake;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\CMakeFiles\3.23.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/nori-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/nori-master -BE:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build --check-stamp-file E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\CMakeFiles\3.23.2\CMakeCCompiler.cmake;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\CMakeFiles\3.23.2\CMakeCXXCompiler.cmake;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\CMakeFiles\3.23.2\CMakeRCCompiler.cmake;E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\CMakeFiles\3.23.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include\nori\bbox.h" />
+    <ClInclude Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include\nori\bitmap.h" />
+    <ClInclude Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include\nori\block.h" />
+    <ClInclude Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include\nori\bsdf.h" />
+    <ClInclude Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include\nori\accel.h" />
+    <ClInclude Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include\nori\camera.h" />
+    <ClInclude Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include\nori\color.h" />
+    <ClInclude Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include\nori\common.h" />
+    <ClInclude Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include\nori\dpdf.h" />
+    <ClInclude Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include\nori\frame.h" />
+    <ClInclude Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include\nori\integrator.h" />
+    <ClInclude Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include\nori\emitter.h" />
+    <ClInclude Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include\nori\mesh.h" />
+    <ClInclude Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include\nori\object.h" />
+    <ClInclude Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include\nori\parser.h" />
+    <ClInclude Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include\nori\proplist.h" />
+    <ClInclude Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include\nori\ray.h" />
+    <ClInclude Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include\nori\rfilter.h" />
+    <ClInclude Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include\nori\sampler.h" />
+    <ClInclude Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include\nori\scene.h" />
+    <ClInclude Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include\nori\timer.h" />
+    <ClInclude Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include\nori\transform.h" />
+    <ClInclude Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include\nori\vector.h" />
+    <ClInclude Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\include\nori\warp.h" />
+    <ClCompile Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\src\bitmap.cpp" />
+    <ClCompile Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\src\block.cpp" />
+    <ClCompile Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\src\accel.cpp" />
+    <ClCompile Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\src\chi2test.cpp" />
+    <ClCompile Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\src\common.cpp" />
+    <ClCompile Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\src\diffuse.cpp" />
+    <ClCompile Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\src\gui.cpp" />
+    <ClCompile Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\src\independent.cpp" />
+    <ClCompile Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\src\main.cpp" />
+    <ClCompile Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\src\mesh.cpp" />
+    <ClCompile Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\src\obj.cpp" />
+    <ClCompile Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\src\object.cpp" />
+    <ClCompile Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\src\parser.cpp" />
+    <ClCompile Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\src\perspective.cpp" />
+    <ClCompile Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\src\proplist.cpp" />
+    <ClCompile Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\src\rfilter.cpp" />
+    <ClCompile Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\src\scene.cpp" />
+    <ClCompile Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\src\ttest.cpp" />
+    <ClCompile Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\src\warp.cpp" />
+    <ClCompile Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\src\microfacet.cpp" />
+    <ClCompile Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\src\mirror.cpp" />
+    <ClCompile Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\src\dielectric.cpp" />
+    <ClCompile Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\src\normals.cpp" />
+    <ClCompile Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\src\direct.cpp" />
+    <ClCompile Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\src\area.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ZERO_CHECK.vcxproj">
+      <Project>{5B3F274A-DB5D-34A1-A90D-88ACA740E2A0}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\Half\Half.vcxproj">
+      <Project>{37927AED-B892-3F03-B678-7B11D7DF9E59}</Project>
+      <Name>Half</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\Iex\Iex.vcxproj">
+      <Project>{84BE3570-6D6C-3FCA-9BAC-B0A3CFF43A83}</Project>
+      <Name>Iex</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\OpenEXR\IlmImf\IlmImf.vcxproj">
+      <Project>{75F3036C-E488-3C6E-863C-F2A0D3901A40}</Project>
+      <Name>IlmImf</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\IlmThread\IlmThread.vcxproj">
+      <Project>{2A68FE46-0022-36E0-A904-800075EAA828}</Project>
+      <Name>IlmThread</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\openexr\IlmBase\Imath\Imath.vcxproj">
+      <Project>{6738C057-81B4-3C8E-80B8-1ADDCAD0BEEF}</Project>
+      <Name>Imath</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\nanogui\nanogui.vcxproj">
+      <Project>{635F7257-8AE1-3AC5-BAED-79519515EC5D}</Project>
+      <Name>nanogui</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\pugixml.vcxproj">
+      <Project>{12E78E13-55CC-36A0-9022-30DE2011A2B8}</Project>
+      <Name>pugixml</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\tbb\tbb_static.vcxproj">
+      <Project>{EDAA0412-5B6F-3C9F-9CFF-9E6A55BAD1FB}</Project>
+      <Name>tbb_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\zlib\zlibstatic.vcxproj">
+      <Project>{755396B3-994A-34DE-92AE-B806D35F437C}</Project>
+      <Name>zlibstatic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

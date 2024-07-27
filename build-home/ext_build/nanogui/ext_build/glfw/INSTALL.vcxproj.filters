@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build-home\CMakeFiles\59b7655f9a3943b5c1345a655fd4516d\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{37F3A17F-4F2E-3877-BE0A-1D23DBE54048}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

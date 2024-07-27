@@ -1,0 +1,14 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/CheckFunctionExists.c
+C:/Program Files/CMake/share/cmake-3.23/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/CheckIncludeFile.c.in
+C:/Program Files/CMake/share/cmake-3.23/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/CheckTypeSize.c.in
+C:/Program Files/CMake/share/cmake-3.23/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/Internal/CheckSourceCompiles.cmake
+E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build-class/CMakeFiles/CheckTypeSize/OFF64_T.c
+E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/nori-master/ext/zlib/CMakeLists.txt
+E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/nori-master/ext/zlib/zconf.h.cmakein
+E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/nori-master/ext/zlib/zlib.pc.cmakein

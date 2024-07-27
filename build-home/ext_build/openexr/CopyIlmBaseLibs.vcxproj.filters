@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build-home\CMakeFiles\58d77ae6de75d144a8e18f16a090127b\CopyIlmBaseLibs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\openexr\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build-home\ext_build\openexr\CMakeFiles\CopyIlmBaseLibs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{37F3A17F-4F2E-3877-BE0A-1D23DBE54048}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

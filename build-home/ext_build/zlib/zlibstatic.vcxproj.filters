@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib\adler32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib\compress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib\crc32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib\deflate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib\gzclose.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib\gzlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib\gzread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib\gzwrite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib\inflate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib\infback.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib\inftrees.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib\inffast.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib\trees.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib\uncompr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib\zutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build-home\ext_build\zlib\zconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib\zlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib\crc32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib\deflate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib\gzguts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib\inffast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib\inffixed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib\inflate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib\inftrees.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib\trees.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib\zutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\zlib\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{178BEF6B-07E6-35A5-9090-09A5D2FC6C7F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2EDDC5E7-6FED-3556-857A-E2931EEC3CB0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

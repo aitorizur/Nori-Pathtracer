@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.23/Modules/CMakeASMInformation.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/CMakeASM_MASMInformation.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/CheckCXXSourceRuns.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/Internal/CheckSourceRuns.cmake
+E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/build/CMakeFiles/3.23.2/CMakeASM_MASMCompiler.cmake
+E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/nori-master/ext/tbb/CMakeLists.txt
+E:/MASTER/Asignaturas/Segundo_Semestre/Rendering_Avanzado_I/Nori/nori-master/ext/tbb/build/version_string.ver.in

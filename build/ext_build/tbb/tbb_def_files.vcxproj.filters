@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tbb\src\tbb\win64-tbb-export.def">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tbb\src\tbbmalloc\win64-tbbmalloc-export.def">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\CMakeFiles\dd8720985a2826ed4a5de41fdd3a5d06\tbb_def_files.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\nori-master\ext\tbb\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\MASTER\Asignaturas\Segundo_Semestre\Rendering_Avanzado_I\Nori\build\ext_build\tbb\CMakeFiles\tbb_def_files" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{BEA0879B-0F6C-34BE-85F5-9B296FFF4C6B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{D80039F0-9D36-3982-923D-92BEE454EAAB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
